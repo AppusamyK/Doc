@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+			  <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="style.css" rel="stylesheet" type="text/css"/>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+
+			<script>
+				function addExperience(){
+					var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+					var node = document.createElement("LI");
+					var fromdate= new Date(document.getElementById("fromDate").value);
+					var todate= new Date(document.getElementById("toDate").value);
+					var strText = "Worked as "+document.getElementById("designation").value+"  in <mark>"+document.getElementById("companyname").value+"</mark>"+ 
+					"from <b>"+months[fromdate.getMonth()] +" "+fromdate.getFullYear()+" to "+months[todate.getMonth()] +" "+todate.getFullYear()+"</b>"
+					var textnode = document.createTextNode("");
+					node.appendChild(textnode);
+					document.getElementById("experienceList").appendChild(node).innerHTML=strText;
+					
+					document.getElementById("designation").value="";
+					document.getElementById("companyname").value="";
+					document.getElementById("fromDate").value="";
+					document.getElementById("toDate").value="";
+				}
+				
+			</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header>
+				<h1>Experience</h1>
+			</header>
+			<legend>Add Experience</legend>
+			<div class="row">
+					<div class="col-xs-6">
+							
+							Company:<br/>
+							<input id="companyname" type="text" /><br/>					
+							<br/>
+							Designation:<br/><input id="designation" type="text" ></input><br/>
+							<button value="AddCompany" onclick="addExperience()">Add Company</button>
+					</div>		
+					<div  class="col-xs-6">					
+							
+							From:<br/><input type="date" id="fromDate" ></input><br/>
+							To:<br/><input type="date" id="toDate"></input><br/>
+					</div>
+			</div>
+			<div class="row">
+				<br/>
+					<ul id="experienceList">
+					<li>Working as Associate Projects in <mark>Cognizant Technologies, Coimbatore</mark> From <b>October 2014 to till date</b></li>
+					<li>Worked as Senior System Engineer  in <mark>Infosys Limited., Chennai</mark>, from <b>November 2012 to September 2014</b></li>
+					<li>Worked as a Senior Software Engineer in <mark>Capgemini  India Pvt Ltd., Chennai</mark> from  <b>September 2011 to November 2012</b></li>
+					<li>Worked as Software Programmer in Flex Technology in <mark>KnowledgeQ Interactive Consultancy Services</mark> from <b>June 2009 to August 2011</b></li>
+					</ul>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>01HTML Assignment</title>
+			<link href="style.css" rel="stylesheet" type="text/css"/>
+	
+	<script>
+		function profile(){
+			clearstyle();
+			document.getElementById('iframePageLoad').src="profile.html";				
+			document.getElementById('profileid').className="active";		
+		}
+		function project(){
+			clearstyle();
+			document.getElementById('iframePageLoad').src="project.html";	
+			document.getElementById('projectid').className="active";		
+		}
+		function experience(){
+			clearstyle();
+			document.getElementById('iframePageLoad').src="experience.html";
+			document.getElementById('experienceid').className="active";					
+		}
+		function personalBio(){
+			clearstyle();
+			document.getElementById('iframePageLoad').src="personal.html";	
+			document.getElementById('experienceid').className="active";			
+		}
+		function contactMe(){
+			clearstyle();
+			document.getElementById('iframePageLoad').src="contactme.html";	
+			document.getElementById('contactmeid').className="active";			
+		}
+
+		function clearstyle(){
+			for(var i=0; i<document.getElementsByTagName("a").length ; i++){
+				document.getElementsByTagName("a")[i].className="";
+			}
+		}
+
+	</script>
+	
+	
+	</head>
+	<body>
+		<header class="header">
+			<h1 style="text-align:center"> Personal Details </h1>
+		</header>
+		<div width="100%" height="15%">
+			<nav>
+				<a  id="profileid" class="active" href="#" onclick="profile()">Profile Highlights</a>
+				<a  id="projectid" href="#" onclick="project()">Projects</a>
+				<a  id="experienceid" href="#" onclick="experience()">Experience</a>
+				<a  id="personalid" href="#" onclick="personalBio()">Personal Biography</a>
+				<a  id="contactmeid" href="#" onclick="contactMe()">Contact Me</a>	
+			</nav>
+		</div>
+
+		<iframe id="iframePageLoad"   src="profile.html" scrolling="auto" />
+
+	<body>
+</html>

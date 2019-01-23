@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script>
+		function onSubmit(){
+			alert("Thanks for your interest "+document.getElementById("contactform").elements[1].value +"!!!!");
+		}
+	</script>
+	</head>
+	<body>
+		<header><h1>Contact Details</h1></header>
+		<form id="contactform" onSubmit="onSubmit()">
+		<fieldset>
+	    	<legend>Personal information:</legend>
+		 <label>Name :</label> <br>		 
+		 <input required placeholder="Enter Name" /><br>
+		 Mobile: <br>
+		 <input  required placeholder="Enter a Mobile number" pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Enter the Valid Phone Number')" /><br>
+		 E-mail : <br>
+		 <input type="email" name="email" required placeholder="Enter a valid email address" oninvalid="this.setCustomValidity('Enter the Valid Email address')" /><br><br>
+		 <button value="Submit">Submit</button>
+		</fieldset>
+		</form>
+	</body>
+</html>

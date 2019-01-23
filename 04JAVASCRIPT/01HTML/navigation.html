@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>01HTML Assignment</title>
+	<style>
+		nav{
+			background: DodgerBlue;
+			height: 30px;
+		}	
+		a{
+			padding:10px;
+			text-color: white;
+			font-weight:bold;
+		}
+		
+		iframe{
+			border: none;
+			borderlinecolor: red;
+			padding: 10px;	
+		}
+	</style>
+	
+	<script>
+		function profile(){
+			document.getElementById('iframePageLoad').src="profile.html";			
+		}
+		function project(){
+			document.getElementById('iframePageLoad').src="project.html";			
+		}
+		function experience(){
+			document.getElementById('iframePageLoad').src="experience.html";			
+		}
+		function personalBio(){
+			document.getElementById('iframePageLoad').src="personal.html";			
+		}
+		function contactMe(){
+			document.getElementById('iframePageLoad').src="contactme.html";			
+		}
+	</script>
+	
+	
+	</head>
+	<body>
+		<h1 style="text-align:center"> Personal Details </h1>
+		<div width="100%" height="15%">
+			<nav>
+				<a  href="#" onclick="profile()">Profile Highlights</a>
+				<a  href="#" onclick="project()">Projects</a>
+				<a  href="#" onclick="experience()">Experience</a>
+				<a  href="#" onclick="personalBio()">Personal Biography</a>
+				<a  href="#" onclick="contactMe()">Contact Me</a>	
+			</nav>
+		</div>
+
+		<iframe id="iframePageLoad"  width="100%" height="500" src="profile.html" scrolling="auto" />
+
+	<body>
+</html>
