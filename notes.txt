@@ -1,0 +1,59 @@
+remeeds:No:TRN50154
+
+session link
+https://drive.google.com/open?id=1idnaAwML82yK2sNg5bDIQR771TgK31su
+
+session:
+http://cognizantiiht.captivateprime.com 
+
+12345Appu@
+
+VM Lab
+https://labs.iiht.tech/#Workspaces/VMExtension/VirtualMachines 
+
+
+pass@word1
+appusamyk
+git and tata
+Appusamy@123
+
+
+new india co:1234Appu01!
+
+
+
+
+Adding EBSHeader and WelPointerHeader Changes for 270 and 276 trans
+
+Adding Legacy Region for MQ Request and Rest Service in servicetool
+
+Coding for EAPR Prime and Classic
+
+Adding meta source Environment for 270 and 276 transactions
+
+Coding for WGS (Lites and alugues) region change
+
+
+Coding for MN Medicaid Branding
+
+Coding for 270 business edit rejection for spend down
+
+Coding for 270 business edit rejection for Multiple Patient loop
+
+Coding for GA Rebranding Change
+
+Coding for Service Type Code Filtering Change Medical Legacy system
+
+
+
+Coding for 271 CDI NPI Number Remove Get_ProvNPI Call
+
+Coding for AR PASSE Branding change
+
+Coding for MN Medicaid - Warranty Items Alternate search Change
+
+Coding for 278 SEVA -APIGEE Change
+
+Coding for FILO Re branding Change
+
+
